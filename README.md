@@ -1,5 +1,5 @@
 # RaiseTech6
-第6回課題
+### 第6回課題
 
 1. Spring Bootを使って画面にHello Worldを表示
 - 作成したソースコードをGitHubのmainブランチにpush
