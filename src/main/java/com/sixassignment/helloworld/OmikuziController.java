@@ -10,16 +10,16 @@ import java.util.Map;
 public class OmikuziController {
 
     // クラス内でのみ使用する定数の定義
-    private final OmikuziService OmikuziService;
+    private final OmikuziService omikuziservice;
 
-    public OmikuziController(OmikuziService OmikuziService) {
-        this.OmikuziService = OmikuziService;
+    public OmikuziController(OmikuziService omikuziservice) {
+        this.omikuziservice = omikuziservice;
     }
 
     // @GetMappingアノテーションでGETリクエスト
     @GetMapping("/omikuzi")
     public Map<String, String> omikuzi() {
-        String result = OmikuziService.omikuzi();
+        String result = omikuziservice.omikuzi();
         return Map.of("result : ", result);
     }
 
