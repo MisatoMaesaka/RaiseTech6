@@ -1,24 +1,26 @@
 package com.sixassignment.helloworld;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 
+// アプリケーション層
 @RestController
 public class OmikuziController {
 
-    private final XxxOmikuziService xxxOmikuziService;
+    // クラス内でのみ使用する定数の定義
+    private final OmikuziService OmikuziService;
 
-    @Autowired
-    public OmikuziController(XxxOmikuziService xxxOmikuziService) {
-        this.xxxOmikuziService = xxxOmikuziService;
+    public OmikuziController(OmikuziService OmikuziService) {
+        this.OmikuziService = OmikuziService;
     }
 
+    // @GetMappingアノテーションでGETリクエスト
     @GetMapping("/omikuzi")
     public Map<String, String> omikuzi() {
-        String result = xxxOmikuziService.omikuzi();
-        return Map.of("result", result);
+        String result = OmikuziService.omikuzi();
+        return Map.of("result : ", result);
     }
+
 }
