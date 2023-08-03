@@ -13,3 +13,6 @@
 1. Hello Worldを表示したプロジェクトに自分で考えた変更を追加
     - 自分で考えた変更を新しいブランチにcommitしてGitHubにpush
     - GitHub上でPRを作ってレビュー依頼
+### おみくじの結果をSpringBootで表示させる（変更内容）
+乱数からおみくじの表示結果を求める  
+<img width="500px" alt="スクリーンショット 2023-08-03 13 48 39" src="https://github.com/MisatoMaesaka/RaiseTech6/assets/139186715/258ed242-9e62-49c5-9049-9f1c914c734d">
